@@ -35,3 +35,12 @@ game1.save()
 game_serializer1 = GameSerializer(game1)
 print(game_serializer1.data)
 ```
+
+```
+json_string_for_new_game = '{"name":"ke","release_date":"2016-01-01T01:02:03"}
+json_bytes_for_new_game=bytes(json_string_for_new_game,encoding="UTF-8")
+stream_for_new_game=BytesIO(json_bytes_for_new_game)
+parser = JSONParser()
+parsed_new_game = parser.parse(stream_for_new_game)
+print(parsed_new_game)
+```
