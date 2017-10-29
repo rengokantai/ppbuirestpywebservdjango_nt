@@ -44,3 +44,10 @@ parser = JSONParser()
 parsed_new_game = parser.parse(stream_for_new_game)
 print(parsed_new_game)
 ```
+
+
+reverse operation
+```
+new_game_serializer = GameSerializer(data=parsed_new_game)
+if new_fame_serializer.is_valid():new_game=new_game_serializer.save()
+```
