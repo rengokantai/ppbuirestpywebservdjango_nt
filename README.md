@@ -1,7 +1,7 @@
 # ppbuirestpywebservdjango_nt
 ```
 python -m venv --without-pip C:\to\path
-pip install django-filter
+pip install django-filter Pillow djangorestframework
 activate.bat
 deactivate.bat
 ```
